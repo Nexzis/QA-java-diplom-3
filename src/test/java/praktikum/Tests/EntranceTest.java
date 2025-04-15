@@ -44,6 +44,7 @@ public class EntranceTest {
     public void assertLoginSuccessfullyByLoginBtn() throws InterruptedException {
 
         ConstructorPage constructorPage = new ConstructorPage(driver);
+        constructorPage.waitForConstructorPageLoad();
         //кликаем на кнопку "Войти в аккаунт"
         constructorPage.clickLoginButton();
 
