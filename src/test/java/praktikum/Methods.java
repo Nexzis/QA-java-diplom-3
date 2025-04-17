@@ -22,7 +22,7 @@ public class Methods {
 
     @Step("Удаление пользователя")
     public static Response deleteUser(String accessToken) {
-        EnvConfig.getSpecWithToken(accessToken)
+        return EnvConfig.getSpecWithToken(accessToken)
                 .when()
                 .delete(EnvConfig.API_DELETE)
                 .then().log().status().log().body()
