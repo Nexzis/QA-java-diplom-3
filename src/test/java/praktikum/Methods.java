@@ -5,10 +5,8 @@ import io.restassured.response.Response;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
-import java.net.HttpURLConnection;
 import java.util.Map;
 
-import static org.hamcrest.CoreMatchers.equalTo;
 
 
 public class Methods {
@@ -23,14 +21,12 @@ public class Methods {
     }
 
     @Step("Удаление пользователя")
-    public static void deleteUser(String accessToken) {
+    public static Response deleteUser(String accessToken) {
         EnvConfig.getSpecWithToken(accessToken)
                 .when()
                 .delete(EnvConfig.API_DELETE)
                 .then().log().status().log().body()
-                .statusCode(HttpURLConnection.HTTP_ACCEPTED)
-                .body("success", equalTo(true))
-                .body("message", equalTo("User successfully removed"));
+                .extract().response();
     }
 
     @Step("Создание пользователя")

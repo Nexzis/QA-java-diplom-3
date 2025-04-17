@@ -1,4 +1,4 @@
-package praktikum.PageObject;
+package praktikum.pages;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;

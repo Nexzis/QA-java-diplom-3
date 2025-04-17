@@ -1,4 +1,4 @@
-package praktikum.Tests;
+package praktikum.tests;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
@@ -9,10 +9,10 @@ import org.openqa.selenium.WebDriver;
 import praktikum.DriverRule;
 import praktikum.EnvConfig;
 import praktikum.Methods;
-import praktikum.PageObject.AccountPage;
-import praktikum.PageObject.HeaderPage;
-import praktikum.PageObject.LoginPage;
-import praktikum.PageObject.ConstructorPage;
+import praktikum.pages.AccountPage;
+import praktikum.pages.HeaderPage;
+import praktikum.pages.LoginPage;
+import praktikum.pages.ConstructorPage;
 import praktikum.User;
 
 public class MoveToAccountTest {

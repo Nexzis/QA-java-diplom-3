@@ -1,4 +1,4 @@
-package praktikum.PageObject;
+package praktikum.pages;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
@@ -10,9 +10,9 @@ public class HeaderPage {
     // Локатор кнопки "Личный кабинет"
     private static final By accountButton = By.xpath("//p[text()='Личный Кабинет']");
     // Локатор лого "Stellar Burgers"
-    private static final By logoButton = By.className("AppHeader_header__logo__2D0X2"); //By.xpath("//*[@id=\"root\"]/div/header/nav/div");
+    private static final By logoButton = By.className("AppHeader_header__logo__2D0X2");
     // Локатор кнопки "Конструктор"
-    private static final By constructorButton = By.className("AppHeader_header__link__3D_hX"); //By.xpath("//*[@id=\"root\"]/div/header/nav/ul/li[1]/a");
+    private static final By constructorButton = By.className("AppHeader_header__link__3D_hX");
 
 
     public HeaderPage(WebDriver driver) {

@@ -1,4 +1,4 @@
-package praktikum.Tests;
+package praktikum.tests;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 import praktikum.DriverRule;
 import praktikum.EnvConfig;
 import praktikum.Methods;
-import praktikum.PageObject.*;
+import praktikum.pages.*;
 import praktikum.User;
 
 public class EntranceTest {
